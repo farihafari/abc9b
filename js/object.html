@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let stdData =[
+             {
+        
+            name:"ali",
+            email:"ali@gmail.com",
+            phone:354672354
+       
+        },
+        {
+        
+        name:"alisha",
+        email:"alisha@gmail.com",
+        phone:354672354
+   
+    },
+    {
+        
+        name:"aliya",
+        email:"aliya@gmail.com",
+        phone:354672354
+   
+    },
+    ]
+        // document.querySelector("#demo").innerHTML=  stdData[0].name+ " "+stdData[0].email+" " +stdData.phone;
+        // // console.log(stdData)
+        // for(let i=0; i<stdData.length; i++){
+        //     console.log(i)
+        //     document.querySelector("#demo").innerHTML+=stdData[i].name+" "+stdData[i].email+" " +stdData[i].phone+"<br>"
+        // }
+        for(let key in stdData){
+            
+            console.log(key)
+            document.querySelector("#demo").innerHTML+=stdData[key].name+" "+stdData[key].email+" "+stdData[key].phone+"<br>"
+        }
+    </script>
+</body>
+</html>
